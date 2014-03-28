@@ -6,7 +6,7 @@ ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
 # Install ruby & friends
-RUN pacman --noconfirm -Syy rubinius
+RUN pacman --noconfirm -Syy rubinius git
 
 # Installs base dependencies
 ENV PATH /usr/lib/rubinius/gems/bin:$PATH
